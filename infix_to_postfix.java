@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class by {
+public class infix_to_postfix {
 
     
     static int priority(char op) {
