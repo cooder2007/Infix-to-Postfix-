@@ -9,9 +9,9 @@ Table of Contnet may vary As I have to change it evrey time I Enter a new progra
 |______|_________________|____________|___________________|________________|_________________|____________|____________|___________|
 |      |                 |            |                   |                |                 |            |            |           |
 |  1   |  Required Tools |  14-31     |                   |                |                 |            |            |           |
-|  2   |  C/C++          |  34-225    |       72-85       |     87-96      |     103-136     |   140-160  |   162-190  |  192-204  |
-|  3   |  Java           |  208-      |                   |                |                 |            |            |           |
-|  4   |  Python         |            |                   |                |                 |            |            |           |
+|  2   |  C/C++          |  34-225    |     72-85         |    87-96       |     103-136     |   140-160  |  162-190   |  192-204  |
+|  3   |  Java           |  208-371   |     242-254       |    256-268     |     271-280     |   306-326  |  330-341   |  358-370  |
+|  4   |  Python         |  373-539   |     408-417       |    419-438     |     441-454     |    N.A.    |  461-515   |  529-539  |
 |______|_________________|____________|___________________|________________|_________________|____________|____________|___________|
 
 //////---------- Required Tools ----------//////
@@ -208,6 +208,7 @@ Run the executable using ./file or .\file
 //////---------- Now for Java ----------//////
 
 Running Java Programs Using VS Code 
+(Use BlueJ if U are begner to )
 
 (Windows, Linux, and macOS)
 
@@ -215,3 +216,324 @@ This guide assumes that you are using Visual Studio Code (VS Code) to write and 
 This could even run in any other folder But I am specific to my repository.
 
 🛠️ Required Tools
+
+Installing the Java Extension in VS Code
+
+Open VS Code
+
+Go to the Extensions tab (Ctrl + Shift + X)
+
+Search for Java Extension Pack
+
+Install the extension by Microsoft
+
+This extension provides:
+
+IntelliSense
+
+Debugging
+
+Maven/Gradle support
+
+Code navigation
+
+🔹 Installing Java (JDK)
+
+✅ Windows Users
+
+You need to install a JDK (Java Development Kit).
+
+Recommended option: OpenJDK
+
+👉 https://adoptium.net/
+
+Steps:
+
+Download and install the latest LTS version
+
+During installation, make sure Add Java to PATH is checked
+
+✅ Linux Users
+
+Install OpenJDK using your package manager:
+
+Ubuntu / Debian
+
+sudo apt update
+sudo apt install openjdk-17-jdk
+
+
+Fedora
+
+sudo dnf install java-17-openjdk-devel
+
+
+✅ macOS Users
+
+Install using Homebrew:
+
+brew install openjdk
+
+
+Or install directly from:
+👉 https://adoptium.net/
+
+🔹 Checking if Java Is Installed
+
+Open the terminal in VS Code using:
+
+Ctrl + `
+
+Then run:
+
+java --version
+
+
+or
+
+javac --version
+
+
+If you see output like:
+
+openjdk 17.0.9
+
+
+then Java is installed correctly.
+
+If the command is not recognized, Java is either not installed or not added to PATH.
+
+🔹 Compiling a Java Program
+
+Navigate to the folder containing your .java file.
+
+Use the following command:
+
+javac FileName.java
+
+
+Example:
+
+If your file name is By.java:
+
+javac By.java
+
+
+This command:
+
+Compiles the source file
+
+Creates a .class file
+
+⚠️ Java programs must be compiled before they can be executed.
+
+🔹 Running the Program
+
+🪟 Windows / 🐧 Linux / 🍎 macOS
+
+Use:
+
+java FileName
+
+
+Example:
+
+java By
+
+
+⚠️ Do NOT write .class while running.
+
+📝 Important Notes
+
+File name must match the class name
+
+Java is case-sensitive
+
+Always recompile after making changes
+
+Compilation errors must be fixed before running
+
+main() method is required to run a Java program
+
+✅ Summary
+
+Install VS Code
+
+Install Java JDK
+
+Install Java Extension Pack
+
+Check Java using java --version or javac --version
+
+Compile using javac File.java
+
+Run using java File
+
+
+//////---------- Now for Python ----------//////
+
+Before running any Python program, make sure you have:
+
+VS Code installed
+
+(Python also works great with PyCharm.
+It comes with a built-in interpreter and is beginner-friendly.)
+
+Python installed
+
+The Python extension installed in VS Code
+
+🔹 Installing the Python Extension in VS Code
+
+Open VS Code
+
+Go to the Extensions tab (Ctrl + Shift + X)
+
+Search for Python
+
+Install the extension by Microsoft
+
+This extension provides:
+
+IntelliSense
+
+Debugging
+
+Code formatting
+
+Virtual environment support
+
+🔹 Installing Python
+
+✅ Windows Users
+
+Download Python from the official website:
+👉 https://www.python.org/
+
+During installation:
+
+✅ Check “Add Python to PATH”
+
+Click Install Now
+
+✅ Linux Users
+
+Most Linux distributions already have Python installed.
+
+Check using:
+
+python3 --version
+
+
+If not installed, install using:
+
+Ubuntu / Debian
+
+sudo apt update
+sudo apt install python3
+
+
+Fedora
+
+sudo dnf install python3
+
+
+✅ macOS Users
+
+Check if Python is installed:
+
+python3 --version
+
+
+If not, install using Homebrew:
+
+brew install python
+
+
+Or download from:
+👉 https://www.python.org/
+
+🔹 Checking if Python Is Installed
+
+Open the terminal in VS Code using:
+
+Ctrl + `
+
+Then run:
+
+python --version
+
+
+or
+
+python3 --version
+
+
+If you see output like:
+
+Python 3.12.1
+
+
+then Python is installed correctly.
+
+If the command is not recognized, Python is either not installed or not added to PATH.
+
+🔹 Running a Python Program
+
+Navigate to the folder containing your .py file.
+
+Use the following command:
+
+🪟 Windows
+
+python fileName.py
+
+
+🐧 Linux / 🍎 macOS
+
+python3 fileName.py
+
+
+Example:
+
+If your file name is by.py:
+
+python by.py
+
+
+or
+
+python3 by.py
+
+
+⚠️ Important Difference from C/C++ & Java
+
+Python does NOT need compilation
+
+Code is executed line by line
+
+No executable file is created
+
+📝 Important Notes
+
+Python file extension must be .py
+
+Python is case-sensitive
+
+Always save the file before running
+
+Indentation matters in Python
+
+Errors are shown directly while running
+
+✅ Summary
+
+Install VS Code
+
+Install Python
+
+Install Python extension
+
+Check Python using python --version or python3 --version
+
+Run using python file.py or python3 file.py
