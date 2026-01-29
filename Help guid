@@ -1,0 +1,217 @@
+Help Guide: 
+
+Table of Contnet may vary As I have to change it evrey time I Enter a new programing language
+
+//////---------- Table of Content ----------//////  This shows How to install A compiler and run the program 
+
+|______|_________________|____________|___________________|________________|_________________|____________|____________|___________|
+| S.no |   Heading       |  Line no.  |  Windows Specific | Linux specific |  MacOS specific |  Compiling |  Executing |  Summary  |
+|______|_________________|____________|___________________|________________|_________________|____________|____________|___________|
+|      |                 |            |                   |                |                 |            |            |           |
+|  1   |  Required Tools |  14-31     |                   |                |                 |            |            |           |
+|  2   |  C/C++          |  34-225    |       72-85       |     87-96      |     103-136     |   140-160  |   162-190  |  192-204  |
+|  3   |  Java           |  208-      |                   |                |                 |            |            |           |
+|  4   |  Python         |            |                   |                |                 |            |            |           |
+|______|_________________|____________|___________________|________________|_________________|____________|____________|___________|
+
+//////---------- Required Tools ----------//////
+
+Before running any program, make sure you have:
+
+VS Code installed
+
+A compiler for thet Program installed installed
+
+The extension installed in VS Code
+
+🔹 Installing VS Code
+
+Download and install VS Code from the official website:
+
+👉 https://code.visualstudio.com/
+
+I will disscus about the copiler in specific heading for the program.
+This works for Windows, Linux, and macOS.
+
+
+//////---------- Now for C/C++ ----------//////
+
+Running C/C++ Programs Using VS Code
+
+(Windows, Linux, and macOS)
+
+This guide assumes that you are using Visual Studio Code (VS Code) to write and run all programs in this repository.
+This could even run in any other folder But I am specific to my repository.
+
+🛠️ Required Tools
+
+Before running any C++ program, make sure you have:
+
+VS Code installed 
+
+(You can use Dev-C++ if you are a beginner.
+It comes with a built-in compiler. 
+U can just open the file in Dev-C++.
+Press F11 it will compile and run the program for U)
+
+A C++ compiler (g++) installed (For C you could install gcc)
+
+The C/C++ extension installed in VS Code
+
+🔹 Installing the C/C++ Extension in VS Code
+
+Open VS Code
+
+Go to the Extensions tab (Ctrl + Shift + X)
+
+Search for C/C++
+
+Install the extension by Microsoft
+
+This extension provides IntelliSense, debugging, and compiler support.
+
+🔹 Installing a C++ Compiler (g++)
+✅ Windows Users
+
+You need to install a compiler such as MinGW or MSYS2.
+
+Recommended option: MSYS2   (This will aslo Install The gcc if not U can now install )
+👉 https://www.msys2.org/
+
+After installation:
+
+Install gcc using MSYS2
+
+Make sure g++ is added to your PATH
+
+You may also use Dev-C++ if you are a beginner, as it comes with a built-in compiler.
+
+✅ Linux Users
+
+Most Linux distributions already include or support g++.
+
+Install it using your package manager:
+
+Ubuntu / Debian
+
+sudo apt update
+sudo apt install g++
+
+
+Fedora
+
+sudo dnf install gcc-c++
+
+✅ macOS Users
+
+Install Xcode Command Line Tools by running:
+
+xcode-select --install
+
+
+This installs clang, which works the same way as g++.
+
+🔹 Checking if the Compiler Is Installed
+
+Open the terminal in VS Code using:
+
+Ctrl + `
+
+
+Then run:
+
+g++ --version
+
+
+If you see output similar to this:
+
+g++ (GCC) 13.2.0
+
+
+or
+
+Apple clang version 15.0.0
+
+
+then your compiler is installed correctly.
+
+If the command is not recognized, the compiler is either not installed or not added to PATH.
+
+🔹 Compiling a C++ Program
+
+Navigate to the folder containing your .cpp file.
+
+Use the following command to compile:
+
+g++ fileName.cpp -o fileName
+
+Example:
+
+If your file name is by.cpp:
+
+g++ by.cpp -o by  
+(For C program write gcc instead of g++)
+
+
+This command:
+
+Compiles the source file
+
+Creates an executable file
+
+⚠️ C++ programs must be compiled before they can be executed.
+
+🔹 Running the Program
+🪟 Windows (PowerShell / CMD)
+.\fileName
+
+
+Example:
+
+.\by
+
+🐧 Linux / 🍎 macOS / Git Bash
+./fileName
+
+
+Example:
+
+./by
+
+
+This will execute the compiled program.
+
+📝 Important Notes
+
+The file name and executable name must match
+
+Always recompile the program after making changes
+
+Compilation errors must be fixed before running the program
+
+File names are case-sensitive on Linux and macOS
+
+✅ Summary
+
+Install VS Code
+
+Install a C++ compiler (g++)
+
+Install the C/C++ extension
+
+Check compiler using g++ --version  (Enter gcc for C programs )
+
+Compile using g++ file.cpp -o file  (Enter gcc for C programs )
+
+Run the executable using ./file or .\file
+
+//////---------- Now for Java ----------//////
+
+Running Java Programs Using VS Code 
+
+(Windows, Linux, and macOS)
+
+This guide assumes that you are using Visual Studio Code (VS Code) to write and run all programs in this repository.
+This could even run in any other folder But I am specific to my repository.
+
+🛠️ Required Tools
